@@ -1,0 +1,203 @@
+prog 1
+
+git config --global user.name " "
+
+git config --global user.email "yourmail@gmail.com"
+
+git config --list
+
+mkdir myproject
+
+cd myproject
+
+git init
+
+git status
+
+touch index.txt
+
+git status
+
+git add index.txt
+
+git add .
+
+git status
+
+git commit -m "First commit"
+
+git log
+
+git remote add origin url
+
+git branch -M master
+
+git push -u origin master
+
+git clone https://github.com/username/myproject.git
+
+git reset --hard
+
+prog 2
+
+mkdir lab2
+
+cd lab2
+
+echo"version 1">file.txt
+
+git add .
+
+git commit -m " initial commit"
+
+git checkout -b feature
+
+echo" feature version ">file1.txt
+
+git add .
+
+git commit -m " chnage in feature"
+
+git checkout master
+
+echo" main version ">file1.txt
+
+git add .
+
+git commit -m " chnage in main"
+
+git merge feature
+
+cat file1.txt
+
+echo" helll from main and feature branch">file1.txt
+
+git add .
+
+git commit -m "resolve merge"
+
+git log
+
+prog 3
+
+sudo apt install openjdk-21-jre-headless (pass-student)
+
+java -version
+
+wget https://get.jenkins.io/war-stable/latest/jenkins.war
+
+ ls
+
+ sudo rm jenkins.war
+
+ sudo rm -rf ~/.Jenkins
+
+java -jar jenkins.war --httpPort=8082
+
+pipeline {
+
+  agent any
+
+  stages{
+
+    
+
+  stage('Clone'){
+
+    steps{
+
+      git url:'https://github.com/Krishnananda7/jenkins-simple-demo1.git',
+
+        branch: 'main'
+
+    }
+
+  }
+
+  stage('Run Script'){
+
+    steps{
+
+      sh 'chmod +x script.sh'
+
+      sh './script.sh'
+
+    }
+
+  }
+
+}
+
+}
+
+sudo apt update
+
+sudo apt install snapd -y
+
+sudo snap install ngrok
+
+ngrok http (Jenkins port-no)
+
+pipeline {
+
+  agent any
+
+  stages {
+
+    stage('Clone') {
+
+      steps {
+
+        git url: 'https://github.com/Sharanya21-ai/jenkins_simple_demo.git',
+
+            branch: 'main'
+
+      }
+
+    }
+
+    stage('Run Python Script') {
+
+      steps {
+
+        sh 'python3 --version'   // optional check
+
+        sh 'python3 python.py'   // runs your python file
+
+      }
+
+    }
+
+    stage('Run Python1 Script') {
+
+      steps {
+
+        sh 'python3 --version'   // optional check
+
+        sh 'python3 bin.py'   // runs your python file
+
+      }
+
+    }
+
+    stage('Run Script') {
+
+      steps {
+
+        sh 'chmod +x script.sh'
+
+        sh './script.sh'
+
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+G620O0 | kuick.io
