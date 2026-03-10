@@ -1,5 +1,6 @@
 prog 1
 
+git --version
 git config --global user.name " "
 
 git config --global user.email "yourmail@gmail.com"
@@ -11,13 +12,10 @@ mkdir myproject
 cd myproject
 
 git init
-
-git status
-
 touch index.txt
 
 git status
-
+echo "hello" > index.txt
 git add index.txt
 
 git add .
@@ -33,18 +31,28 @@ git remote add origin url
 git branch -M master
 
 git push -u origin master
-
-git clone https://github.com/username/myproject.git
+vi index.txt
+git add .
+git commit -m "changes made"
+git log
+git clone url
 
 git reset --hard
 
 prog 2
 
-mkdir lab2
+git config --global user.name "pjeevan740-stack"
+git config --global user.mail "pjeevan740@gmail.com"
 
-cd lab2
 
-echo"version 1">file.txt
+mkdir git-demo-merge
+
+cd git-demo-merge
+git init
+
+touch file.txt
+
+echo "version 1" > file.txt
 
 git add .
 
@@ -52,31 +60,36 @@ git commit -m " initial commit"
 
 git checkout -b feature
 
-echo" feature version ">file1.txt
+echo " feature version " > file1.txt
 
 git add .
 
-git commit -m " chnage in feature"
+git commit -m " change in feature"
 
 git checkout master
 
-echo" main version ">file1.txt
+echo " main version " > file1.txt
 
 git add .
 
-git commit -m " chnage in main"
+git commit -m " change in main"
 
 git merge feature
 
 cat file1.txt
 
-echo" helll from main and feature branch">file1.txt
+echo " helll from main and feature branch" > file1.txt
 
 git add .
 
 git commit -m "resolve merge"
 
 git log
+
+
+
+
+
 
 prog 3
 
