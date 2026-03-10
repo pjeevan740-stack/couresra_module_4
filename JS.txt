@@ -39,6 +39,11 @@ git clone url
 
 git reset --hard
 
+
+
+
+
+
 prog 2
 
 git config --global user.name "pjeevan740-stack"
