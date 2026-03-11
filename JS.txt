@@ -31,7 +31,8 @@ git remote add origin url
 git branch -M master
 
 git push -u origin master
-vi index.txt
+vi index.txt (i esc : w q)
+cat index.txt
 git add .
 git commit -m "changes made"
 git log
@@ -98,7 +99,8 @@ git log
 
 prog 3
 
-sudo apt install openjdk-21-jre-headless (pass-student)
+sudo apt update
+sudo apt install openjdk-21-jre-headless -y
 
 java -version
 
@@ -106,9 +108,7 @@ wget https://get.jenkins.io/war-stable/latest/jenkins.war
 
  ls
 
- sudo rm jenkins.war
 
- sudo rm -rf ~/.Jenkins
 
 java -jar jenkins.war --httpPort=8082
 
